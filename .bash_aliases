@@ -10,6 +10,7 @@ alias cll='clear ; pwd ; echo ; ll ;'
 alias apconf='cd /as/conf/apache/local/webprod/'
 alias www='sudo -H -u www bash -l'
 alias acldups="setacl ; cat www-acl-* | cut -d' ' -f 1 | sort | uniq -c | sort -n ;"
+alias apconf='cd /as/conf/apache/local/webprod/'
 
 # Vagrant
 alias vup='vagrant up'
