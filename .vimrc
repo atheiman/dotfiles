@@ -12,5 +12,5 @@ set shiftwidth=2
 "tabs as spaces
 set expandtab
 
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
