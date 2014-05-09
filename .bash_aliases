@@ -2,7 +2,7 @@
 alias ll='ls -alF'
 alias la='ls -a'
 alias l='ls -F'
-alias cls='clear ; pwd ; echo "" ; l ;'
+alias cls='clear ; pwd ; echo ; l ;'
 alias cla='clear ; pwd ; echo ; la ;'
 alias cll='clear ; pwd ; echo ; ll ;'
 
