@@ -1,5 +1,5 @@
 # Aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -a'
 alias l='ls -F'
 alias cls='clear ; pwd ; echo ; l ;'
