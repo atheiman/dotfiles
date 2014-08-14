@@ -65,11 +65,14 @@ do
 						
 				esac
 			done
-		fi		
-	fi
-	
-	echo
-	
+			
+			echo
+		
+		else
+			# the dotfile is not already in home dir, so just link it.
+			ln -s $DIR/$DOTFILE ~/$DOTFILE
+		fi
+	fi	
 done
 
 
