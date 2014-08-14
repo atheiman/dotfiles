@@ -1,6 +1,6 @@
 # Aliases
-alias ll='ls -alhF'
-alias la='ls -a'
+alias ll='ls -alh'
+alias la='ls -aF'
 alias l='ls -F'
 alias cls='clear ; pwd ; echo ; l ;'
 alias cla='clear ; pwd ; echo ; la ;'
