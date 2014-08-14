@@ -33,36 +33,39 @@ do
 			read -p "What should I do ([r]emove is default)? [r | m | i | a] " RESPONSE
 			do
 				case $RESPONSE in
+					
 					r|R|remove|Remove|REMOVE|"")
-						echo "Response received: REMOVE"
+						echo "Removing ~/$DOTFILE and symlinking $DIR/$DOTFILE -> ~/$DOTFILE"
+						rm -f ~/$DOTFILE
+						ln -s $DIR/$DOTFILE ~/$DOTFILE
 						break
 						;;
+						
 					m|M|move|Move|MOVE)
-						echo "move"
+						echo "Moving ~/$DOTFILE to ~/$DOTFILE.old and symlinking $DIR/$DOTFILE -> ~/$DOTFILE"
+						mv -f ~/$DOTFILE ~/$DOTFILE.old
+						ln -s $DIR/$DOTFILE ~/$DOTFILE
 						break
 						;;
+						
 					i|I|ignore|Ignore|IGNORE)
-						echo "ignore"
+						echo "Ignoring new $DOTFILE"
 						break
 						;;
+						
 					a|A|append|Append|APPEND)
-						echo "append"
+						echo "Appending $DIR/$DOTFILE to ~/$DOTFILE"
+						cat $DIR/$DOTFILE >> ~/$DOTFILE
 						break
 						;;
+						
 					*)
 						echo "Unrecognized response. Type 'r', 'm', 'i', or 'a' please."
 						;;
+						
 				esac
 			done
-		fi
-		
-		echo "Removing ~/$DOTFILE"
-		rm -f ~/$DOTFILE
-		# echo "Moving ~/$DOTFILE to ~/$DOTFILE.old"
-		# mv -fv ~/$DOTFILE ~/$DOTFILE.old
-		echo "Symlinking ~/$DOTFILE to $DIR/$DOTFILE"
-		ln -s $DIR/$DOTFILE ~/$DOTFILE
-		
+		fi		
 	fi
 	
 	echo
