@@ -6,8 +6,8 @@ let g:loaded_matchparen=1
 
 "autoindent and tab settings
 "set smartindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 "tabs as spaces
 "set expandtab
