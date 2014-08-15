@@ -26,6 +26,7 @@ alias vstatus='vagrant status'
 
 # Git
 alias gbranch='git branch'
+alias ginit='git init'
 alias gadd='git add'
 alias gpush='git push'
 alias gcommit='git commit'
