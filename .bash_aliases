@@ -6,6 +6,10 @@ alias cls='clear ; pwd ; echo ; l ;'
 alias cla='clear ; pwd ; echo ; la ;'
 alias cll='clear ; pwd ; echo ; ll ;'
 
+# Change PS1
+alias ps1long='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"'
+alias ps1short='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u \[$(tput setaf 6)\]\W \$ \[$(tput sgr0)\]"'
+
 # OME
 alias apconf='cd /as/conf/apache/local/webprod/'
 alias www='sudo -H -u www bash -l'
