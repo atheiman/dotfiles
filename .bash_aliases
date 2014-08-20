@@ -5,6 +5,7 @@ alias l='ls -F'
 alias cls='clear ; pwd ; echo ; l ;'
 alias cla='clear ; pwd ; echo ; la ;'
 alias cll='clear ; pwd ; echo ; ll ;'
+alias please='sudo $(history -p !!)'
 
 # Change PS1
 alias ps1long='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"'

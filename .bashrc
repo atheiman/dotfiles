@@ -15,3 +15,4 @@ export PATH=$PATH:/usr/bin:/usr/local/bin:/as/bin:/usr/bin:~/bin
 export EDITOR=/usr/bin/vim
 
 stty erase ^?
+stty erase ^H
