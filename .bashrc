@@ -8,6 +8,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.local_bashrc ]; then
+    . ~/.local_bashrc
+fi
+
 export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"
 
 export PATH=$PATH:/usr/bin:/usr/local/bin:/as/bin:/usr/bin:~/bin
