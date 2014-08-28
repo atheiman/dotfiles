@@ -7,6 +7,9 @@ alias cla='clear ; pwd ; echo ; la ;'
 alias cll='clear ; pwd ; echo ; ll ;'
 alias please='sudo $(history -p !!)'
 
+# Others
+alias chrome="open -a /Applications/Google\ Chrome.app/"  # Usage: "chrome myfile.html"
+
 # Change PS1
 alias ps1long='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"'
 alias ps1short='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u \[$(tput setaf 6)\]\W \$ \[$(tput sgr0)\]"'
