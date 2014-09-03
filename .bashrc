@@ -17,6 +17,3 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[
 export PATH=$PATH:/usr/bin:/usr/local/bin:/as/bin:/usr/bin:~/bin
 
 export EDITOR=/usr/bin/vim
-
-stty erase ^?
-stty erase ^H
