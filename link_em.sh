@@ -75,4 +75,5 @@ do
 	fi	
 done
 
+echo "# Place BASH settings you want only applied to this machine in this file." >> ~/.local_bashrc
 
