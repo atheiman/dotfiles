@@ -27,6 +27,9 @@ alias vssh='vagrant ssh'
 alias vprovision='vagrant provision'
 alias vreset='vagrant destroy -f ; vagrant up ;'
 alias vstatus='vagrant status'
+alias vhalt='vagrant halt'
+alias vhelp='vagrant help'
+alias vsuspend='vagrant suspend'
 
 # Git
 alias gbranch='git branch'
