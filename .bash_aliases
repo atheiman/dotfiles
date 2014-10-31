@@ -48,3 +48,7 @@ alias gclone='git clone'
 alias gtree='git log --graph --pretty=oneline --abbrev-commit'
 alias gpushorigin='gpush origin'
 alias gpullorigin='gpull origin'
+
+# Fab
+alias fab='fab -f conf/fabfile.py'
+
