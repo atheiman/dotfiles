@@ -10,6 +10,7 @@ alias please='sudo $(history -p !!)'
 
 # Others
 alias chrome="open -a /Applications/Google\ Chrome.app/"  # Usage: "chrome myfile.html"
+alias grep="grep --color"
 
 # Change PS1
 alias ps1long='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"'
