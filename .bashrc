@@ -17,3 +17,5 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u \[$(tput setaf 6)\]\W \$ \[$(t
 export PATH=$PATH:/usr/local/bin:/usr/bin:~/bin
 
 export EDITOR=/usr/bin/vim
+
+export PYTHONSTARTUP=~/.pythonrc
