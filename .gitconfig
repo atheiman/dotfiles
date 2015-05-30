@@ -1,0 +1,10 @@
+[user]
+	name = Austin Heiman
+	email = atheimanksu@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	co = checkout
+	br = branch
