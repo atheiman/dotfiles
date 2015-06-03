@@ -10,7 +10,7 @@ set tabstop=4
 set shiftwidth=4
 
 "tabs as spaces
-"set expandtab
+set expandtab
 
 "filetype plugin indent on
 syntax on
