@@ -1,10 +1,10 @@
 # Aliases
-alias ll='ls -alhG'
-alias la='ls -aFG'
-alias l='ls -FG'
-alias cls='clear ; pwd ; echo ; l ;'
-alias cla='clear ; pwd ; echo ; la ;'
-alias cll='clear ; pwd ; echo ; ll ;'
+alias ls='ls --color=auto'
+alias l='ls -F'
+alias ll='ls -alh'
+alias clear='clear && pwd && echo'
+alias cls='clear && l'
+alias cll='clear && ll'
 alias cl='cll'
 alias please='sudo $(history -p !!)'
 
