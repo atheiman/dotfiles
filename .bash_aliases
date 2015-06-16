@@ -16,14 +16,8 @@ alias chrome="open -a /Applications/Google\ Chrome.app/"  # Usage: "chrome myfil
 alias grep="grep --color"
 
 # Change PS1
-alias ps1long='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\H:\[$(tput setaf 6)\]\w \$ \[$(tput sgr0)\]"'
-alias ps1short='export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u \[$(tput setaf 6)\]\W \$ \[$(tput sgr0)\]"'
-
-# OME
-alias apconf='cd /as/conf/apache/local/webprod/'
-alias www='sudo -H -u www bash -l'
-alias acldups="setacl ; cat www-acl-* | cut -d' ' -f 1 | sort | uniq -c | sort -n ;"
-alias apconf='cd /as/conf/apache/local/webprod/'
+alias ps1short='export PS1="\W \$ "'
+alias ps1long='export PS1="[\t][\u@\h:\w] \$ "'
 
 # Vagrant
 alias vup='vagrant up'
@@ -53,7 +47,4 @@ alias gdiff='git diff --color'
 alias gtree='git log --graph --pretty=oneline --abbrev-commit'
 alias gpushorigin='gpush origin'
 alias gpullorigin='gpull origin'
-
-# Fab
-alias fab='fab -f conf/fabfile.py'
 
