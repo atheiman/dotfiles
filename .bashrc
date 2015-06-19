@@ -21,3 +21,4 @@ export PATH=$PATH:/usr/local/bin:/usr/bin:~/bin
 export EDITOR=/usr/bin/vim
 
 export PYTHONSTARTUP=~/.pythonrc
+
