@@ -4,7 +4,6 @@
 	username = atheiman
 [core]
 	editor = vim
-	autocrlf = true
 [color]
 	ui = true
 [alias]
