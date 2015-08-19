@@ -14,6 +14,8 @@ export EDITOR=/usr/bin/vim
 
 export PYTHONSTARTUP=~/.pythonrc
 
+source /usr/local/Cellar/git/2.5.0/etc/bash_completion.d/git-completion.bash
+
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
