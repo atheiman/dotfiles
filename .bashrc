@@ -11,14 +11,15 @@ export PS1="\W \$ "
 export PATH=$PATH:/usr/local/bin:/usr/bin:~/bin
 
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
 
 export EDITOR=/usr/bin/vim
-
 export PYTHONSTARTUP=~/.pythonrc
 
 set -o vi
 
 source /usr/local/Cellar/git/2.14.1/etc/bash_completion.d/git-completion.bash
+complete -C '/Users/austinheiman/.pyenv/shims/aws_completer' aws
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
