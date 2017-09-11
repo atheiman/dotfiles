@@ -34,7 +34,11 @@ set output-meta on
 
 # allow the use of the Delete/Insert keys
 "\e[3~": delete-char
+"^[[3~": delete-char
+"^[3;5~": delete-char
 "\e[2~": quoted-insert
+# bindkey    "^[[3~"          delete-char
+# bindkey    "^[3;5~"         delete-char
 
 # mappings for "page up" and "page down" to step to the beginning/end
 # of the history
