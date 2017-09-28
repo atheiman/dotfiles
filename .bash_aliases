@@ -48,3 +48,31 @@ alias gtree='git log --graph --pretty=oneline --abbrev-commit'
 alias gpushorigin='gpush origin'
 alias gpullorigin='gpull origin'
 
+gfixup() {
+  set -x
+  git add --all
+  git commit --fixup=$(git log --oneline | head -1 | cut -d ' ' -f 1)
+  git rebase --interactive HEAD~2 --autosquash
+  set +x
+
+  local branch_name=$(git symbolic-ref -q HEAD)
+  branch_name=${branch_name##refs/heads/}
+  branch_name=${branch_name:-HEAD}
+
+  echo 'Previous commit fixed up.'
+  echo 'To update a previously pushed branch, run:'
+  echo "    git push origin $branch_name -f"
+}
+
+gitupdatefork() {
+  if [[ "$#" -ne 1 ]]; then
+    echo "Usage: ${FUNCNAME[0]} DEFAULT_BRANCH"
+    # exit current function
+    kill -INT $$
+  fi
+  local DEFAULT_BRANCH="$1"
+  git checkout "$DEFAULT_BRANCH"
+  git fetch upstream "$DEFAULT_BRANCH"
+  git merge upstream/"$DEFAULT_BRANCH"
+  git push origin "$DEFAULT_BRANCH"
+}
