@@ -18,11 +18,16 @@ export PYTHONSTARTUP=~/.pythonrc
 
 set -o vi
 
-source /usr/local/Cellar/git/2.14.1/etc/bash_completion.d/git-completion.bash
-complete -C '/Users/austinheiman/.pyenv/shims/aws_completer' aws
+if [ -f /Users/austinheiman/.pyenv/shims/aws_completer ]; then
+  complete -C '/Users/austinheiman/.pyenv/shims/aws_completer' aws
+fi
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
+fi
+
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+  . /usr/local/share/bash-completion/bash_completion
 fi
 
 if [ -f ~/.local_bashrc ]; then
