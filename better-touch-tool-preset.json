@@ -3,20 +3,34 @@
   "BTTPresetUUID" : "F9A72560-2F14-484A-B6B1-AF3B3E75DA52",
   "BTTPresetContent" : [
     {
-      "BTTAppBundleIdentifier" : "BT.G",
-      "BTTAppName" : "Global",
-      "BTTAppSpecificSettings" : {
-
-      },
+      "BTTAppBundleIdentifier" : "com.googlecode.iterm2",
+      "BTTAppName" : "iTerm2",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "iTerm2",
       "BTTTriggers" : [
         {
-          "BTTTriggerType" : 104,
-          "BTTTriggerTypeDescription" : "3 Finger Tap",
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 2,
-          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,30",
           "BTTEnabled" : 1,
-          "BTTOrder" : 0
+          "BTTOrder" : 0,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
+        },
+        {
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,33",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         }
       ]
     },
@@ -37,41 +51,25 @@
           "BTTTriggerType" : 101,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
           "BTTShortcutToSend" : "58,55,124",
           "BTTEnabled" : 1,
-          "BTTOrder" : 0
+          "BTTOrder" : 0,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         },
         {
           "BTTTriggerType" : 100,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
           "BTTShortcutToSend" : "58,55,123",
           "BTTEnabled" : 1,
-          "BTTOrder" : 1
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.googlecode.iterm2",
-      "BTTAppName" : "iTerm2",
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "iTerm2",
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 101,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "56,55,30",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "56,55,33",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
+          "BTTOrder" : 1,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         }
       ]
     },
@@ -88,17 +86,45 @@
           "BTTTriggerType" : 100,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
           "BTTShortcutToSend" : "58,55,123",
           "BTTEnabled" : 1,
-          "BTTOrder" : 0
+          "BTTOrder" : 0,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         },
         {
           "BTTTriggerType" : 101,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
           "BTTShortcutToSend" : "58,55,124",
           "BTTEnabled" : 1,
-          "BTTOrder" : 1
+          "BTTOrder" : 1,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 104,
+          "BTTTriggerTypeDescription" : "3 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 2,
+          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         }
       ]
     },
@@ -110,11 +136,15 @@
       "BTTTriggers" : [
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
           "BTTShortcutToSend" : "58,36",
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 36,
           "BTTShortcutModifierKeys" : 131072,
-          "BTTOrder" : 0
+          "BTTOrder" : 0,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
         }
       ]
     }
