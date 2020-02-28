@@ -1,11 +1,13 @@
 [user]
-	name = Austin Heiman
-	email = atheimanksu@gmail.com
-	username = atheiman
+    name = Austin Heiman
+    email = atheimanksu@gmail.com
+    username = atheiman
 [core]
-	editor = vim
+    editor = vim
 [color]
-	ui = true
+    ui = true
 [alias]
-	co = checkout
-	br = branch
+    co = checkout
+    br = branch
+    st = status
+
