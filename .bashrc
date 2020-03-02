@@ -14,8 +14,8 @@ export PS1="\W \$ "
 #export PATH=$PATH:/usr/local/bin:/usr/bin:~/bin
 export PATH=~/bin:$PATH
 
-if [ which rbenv ]; then eval "$(rbenv init -)"; fi
-if [ which pyenv ]; then eval "$(pyenv init -)"; fi
+if which rbenv; then eval "$(rbenv init -)"; fi
+if which pyenv; then eval "$(pyenv init -)"; fi
 
 export EDITOR="$(which vim)"
 export PYTHONSTARTUP=~/.pythonrc
