@@ -16,6 +16,7 @@ export PATH=~/bin:$PATH
 
 if which rbenv >/dev/null 2>&1; then eval "$(rbenv init -)"; fi
 if which pyenv >/dev/null 2>&1; then eval "$(pyenv init -)"; fi
+if which nodenv >/dev/null 2>&1; then eval "$(nodenv init -)"; fi
 
 export EDITOR="$(which vim)"
 export PYTHONSTARTUP=~/.pythonrc
@@ -30,8 +31,8 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-  . /usr/local/share/bash-completion/bash_completion
+if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+  . /usr/local/etc/profile.d/bash_completion.sh
 fi
 
 if [ -f ~/.local_bashrc ]; then
